@@ -8,7 +8,6 @@ Run directly to generate CSV outputs to /mnt/data and example plots.
 # 车辆燃油消耗 & 续航里程仿真代码。
 
 
-import re               # 正则（这里只是导入了，但目前代码里没用到）
 import numpy as np      # 数值计算库
 import pandas as pd     # 数据表处理库
 from dataclasses import dataclass, asdict   # 用 dataclass 简化参数类写法

@@ -168,12 +168,14 @@ def scenario_compare(p, speeds_kmh):
         #constant uphill slope of 1 degree
         "1 degree ": sweep_speed_time_and_range(p, speeds_kmh, theta = np.deg2rad(1.0)),
         #Headwind 5 m/s
-        "Headwind 5 m/s": sweep_speed_time_and_range(p, speeds_kmh, v_wind=5.0),
+        "Wind effect": sweep_speed_time_and_range(p, speeds_kmh, v_wind=5.0),
+        #combining them
+        "Considering both wind and slope": sweep_speed_time_and_range(p, speeds_kmh,theta = np.deg2rad(1.0), v_wind=5.0)
     }
 
 
 #compute tornado sensitivity analysis, modify each coefficient by 10% and compute the difference between original value
-def sensitivity_at_speed(p, base_speed_kmh=80.0):
+def sensitivity_at_speed(p, base_speed_kmh=70.0):
     base_df = simulate_until_empty_constant_speed(base_speed_kmh, p)
     base_L100 = base_df.attrs["L_per_100km"]
 
@@ -227,7 +229,7 @@ def plot_L100_vs_speed_multi(scenarios):
     plt.tight_layout()
 
 
-def plot_sensitivity_tornado(df, title="Sensitivity Tornado (±10% at 90 km/h)"):
+def plot_sensitivity_tornado(df, title="Sensitivity Tornado (±10% at 70 km/h)"):
     # df: columns = ["parameter", "L_per_100km"] where L_per_100km is delta vs base
     d = df.copy()
     d["abs_delta"] = np.abs(d["L_per_100km"])
@@ -255,3 +257,4 @@ if __name__ == "__main__":
     plot_sensitivity_tornado(sens)
 
     plt.show()
+

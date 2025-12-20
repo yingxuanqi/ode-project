@@ -56,5 +56,5 @@ pip install numpy pandas matplotlib
     - base_speed_kmh is the optimal speed, can change to other speed to compute local sensitivity analysis
   
 ## Contribution to project
-Yingxuan: all code in main.py file, editing abstract, introduction, mathematical model, all of the methodology, result and discussion
-Adi: bsfc_compare.py according to him, a RK4 method simulation were wrote but never seen
+- Yingxuan: all code in main.py file, editing abstract, introduction, mathematical model, all of the methodology, result and discussion
+- Adi: bsfc_compare.py according to him, a RK4 method simulation were wrote but never seen

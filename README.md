@@ -28,3 +28,20 @@ Install:
 pip install numpy pandas matplotlib
 ```
 ## How to Run
+- Main simulation
+  ```bash
+  python main.py
+  ```
+  This will open matplotlib windosw with several figures
+- compare nonlinear BSFC and Villans
+  ```bash
+  python bsfc_compare.py
+  ```
+  This will generate three plots:
+  Drive range vs. speed when fuel runs out
+  Time to empty vs. speed
+  Fuel consumption (L/100km) vs speed
+## Parameter You may likely to change to test the program
+-`main.py`'
+  In class VehicleParams:
+  fuel_L_initial (def

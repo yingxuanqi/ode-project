@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 class VehicleParams:
     def __init__(self):
         #inital parameter and coefficient
-        self.CdA = 0.62
+        self.CdA = 0.62 #assume 1 m^2 reference area
         self.Crr = 0.0105
         self.air_density = 1.2
         self.g = 9.8
@@ -257,4 +257,5 @@ if __name__ == "__main__":
     plot_sensitivity_tornado(sens)
 
     plt.show()
+
 

@@ -57,4 +57,4 @@ pip install numpy pandas matplotlib
   
 ## Contribution to project
 - Yingxuan: all code in main.py file, editing abstract, introduction, mathematical model, all of the methodology, result and discussion
-- Adi: bsfc_compare.py according to him, a RK4 method simulation were wrote but never seen
+- Adi: bsfc_compare.py according to him, a RK4 method simulation were wrote but never seen, he did abstract, introduction, mathematical model, but due to the low quailty, Yingxuan have to redo these part

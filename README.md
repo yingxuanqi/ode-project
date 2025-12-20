@@ -7,11 +7,24 @@ This project models vehicle fuel consumption and achievable driving range under 
 
 ## Files
 - `main.py`  
-  Main simulation using a Willans-line fuel flow approximation (fuel mass depletes over time via forward Euler). Produces:
+  Main simulation using a Willans-line fuel flow approximation (Forward Euler method). Produces:
   - Range vs speed (base case)
-  - Time-to-empty vs speed (base case)
-  - Fuel consumption (L/100 km) vs speed for multiple scenarios (wind/grade)
-  - Tornado sensitivity bar chart (±10% parameter perturbations)
+  - Time-to-empty vs speed (not used in the report but worth to have)
+  - Fuel consumption (L/100 km) vs speed for multiple scenarios (under wind, grade, and combination of wind and grade)
+  - Tornado sensitivity bar chart (±10% parameter perturbations at optical cruising speed)
 
 - `bsfc_compare.py`  
-  Compares **nonlinear BSFC** and **(constant-BSFC-based) Willans-style** fuel consumption trends vs speed on flat ground (generates range/time/L100 plots).
+  Compares **nonlinear BSFC** and **Willans line model** fuel consumption trends vs speed on flat ground (generates range/time/L100 plots).
+  
+## Requirements
+- Python 3.9+ recommended
+- Packages:
+  - numpy
+  - pandas (used in `main.py`)
+  - matplotlib
+
+Install:
+```bash
+pip install numpy pandas matplotlib
+
+## How to Run

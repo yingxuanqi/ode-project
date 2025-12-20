@@ -52,6 +52,6 @@ pip install numpy pandas matplotlib
     - eta0, LHV (default assume gasoline)
   - In __name__ == "__main__":
     - speeds = np.arange(40, 141, 10) (first value is start, second is end, third is step, this is used for testing different range of speed)
-  -sensitivity_at_speed(p, base_speed_kmh=80.0):
+  - In sensitivity_at_speed(p, base_speed_kmh=80.0):
     - base_speed_kmh is the optimal speed, can change to other speed to compute local sensitivity analysis
   

@@ -38,9 +38,9 @@ pip install numpy pandas matplotlib
   python bsfc_compare.py
   ```
   This will generate three plots:
-  Drive range vs. speed when fuel runs out
-  Time to empty vs. speed
-  Fuel consumption (L/100km) vs speed
+  -Drive range vs. speed when fuel runs out
+  -Time to empty vs. speed
+  -Fuel consumption (L/100km) vs speed
 ## Parameter You may like to change to test the program
 -`main.py`
   In class VehicleParams:

@@ -38,20 +38,20 @@ pip install numpy pandas matplotlib
   python bsfc_compare.py
   ```
   This will generate three plots:
-  -Drive range vs. speed when fuel runs out
-  -Time to empty vs. speed
-  -Fuel consumption (L/100km) vs speed
+  - Drive range vs. speed when fuel runs out
+  - Time to empty vs. speed
+  - Fuel consumption (L/100km) vs speed
 ## Parameter You may like to change to test the program
 -`main.py`
-  In class VehicleParams:
-  fuel_L_initial (default 20L)
-  mass_car (default 1450 kg)
-  CdA (default Cd is 0.62, (assumed reference area is 1 m^2))
-  Cdrr (default 0.01)
-  accessory_power(default 700W, anything between 300-1000 is reasonable)
-  eta0, LHV (default assume gasoline)
-  In __name__ == "__main__":
-  speeds = np.arange(40, 141, 10) (first value is start, second is end, third is step, this is used for testing different range of speed)
-  sensitivity_at_speed(p, base_speed_kmh=80.0):
-  base_speed_kmh is the optimal speed, can change to other speed to compute local sensitivity analysis
+  - In class VehicleParams:
+    - fuel_L_initial (default 20L)
+    - mass_car (default 1450 kg)
+    - CdA (default Cd is 0.62, (assumed reference area is 1 m^2))
+    - Cdrr (default 0.01)
+    - accessory_power(default 700W, anything between 300-1000 is reasonable)
+    - eta0, LHV (default assume gasoline)
+  - In __name__ == "__main__":
+    - speeds = np.arange(40, 141, 10) (first value is start, second is end, third is step, this is used for testing different range of speed)
+  -sensitivity_at_speed(p, base_speed_kmh=80.0):
+    - base_speed_kmh is the optimal speed, can change to other speed to compute local sensitivity analysis
   
